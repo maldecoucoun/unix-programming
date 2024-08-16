@@ -1,0 +1,12 @@
+mov eax, [0x600000]
+mov ebx, eax
+shl ebx, 4
+mov ecx, eax
+shl ecx, 3
+mov edx, eax
+shl edx, 1
+add ebx, ecx
+add ebx, edx
+mov [0x600004], ebx
+mov eax, 60
+xor edi, edi
